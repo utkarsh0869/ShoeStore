@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShoeDetailsFragment">
+
+        <LinearLayout
+            android:id="@+id/linerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/shoeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SHOE DESCRIPTION" />
+
+            <EditText
+                android:id="@+id/shoeSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SHOE SIZE" />
+
+            <EditText
+                android:id="@+id/shoeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SHOE NAME"/>
+
+            <EditText
+                android:id="@+id/shoeCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SHOE COMPANY"/>
+
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cancel" />
+
+            <Button
+                android:id="@+id/addNewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add new shoe" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>

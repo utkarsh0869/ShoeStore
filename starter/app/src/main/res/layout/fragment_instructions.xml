@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="instructionsFragment"
+            type="com.udacity.shoestore.InstructionsFragment" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InstructionsFragment">
+
+        <TextView
+            android:id="@+id/firstInstructionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By clicking the Shoe List Button, you will be taken to the shoe list page."
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/secondInstructionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thereon after you can add your desired shoe to the inventory."
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/firstInstructionTextView"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/shoeListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shoe List"
+            android:layout_below="@+id/secondInstructionTextView"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+</layout>
