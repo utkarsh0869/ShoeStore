@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
         <variable
             name="instructionsFragment"
             type="com.udacity.shoestore.InstructionsFragment" />
     </data>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- Used LinearLayout because there are only 3 views that needs to be shown
+     and the easiest way to present them is by using LinearLayout by aligning the views vertically-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".InstructionsFragment">
+        tools:context=".InstructionsFragment"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/firstInstructionTextView"
@@ -45,5 +48,5 @@
             android:textColor="@color/white"
             android:background="@color/colorPrimaryDark"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 </layout>

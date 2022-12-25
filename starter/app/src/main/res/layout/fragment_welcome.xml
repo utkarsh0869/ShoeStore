@@ -5,11 +5,13 @@
             name="welcomeFragment"
             type="com.udacity.shoestore.WelcomeFragment" />
     </data>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- Used LinearLayout because there are only 3 views that needs to be shown
+     and the easiest way to present them is by using LinearLayout by aligning the views vertically-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".WelcomeFragment">
 
         <TextView
@@ -36,5 +38,5 @@
             android:layout_margin="10dp" />
 
 
-    </RelativeLayout>
+    </LinearLayout>
 </layout>

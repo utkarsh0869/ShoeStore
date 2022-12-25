@@ -5,7 +5,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ShoeDetailsFragment">
-
+        <!-- Used LinearLayout because using LinearLayout aligning the views vertically is easy
+        to show the edit texts and the 3 buttons-->
         <LinearLayout
             android:id="@+id/linerLayout"
             android:layout_width="match_parent"
