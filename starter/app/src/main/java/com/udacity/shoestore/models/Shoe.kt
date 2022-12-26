@@ -1,3 +1,22 @@
 package com.udacity.shoestore.models
 
-data class Shoe(var name: String, var size: String, var company: String, var description: String)
+import androidx.lifecycle.MutableLiveData
+
+class Shoe {
+    var shoeSize : String = ""
+    var companyName : String = ""
+    var shoeDescription : String = ""
+    var shoeName : String = ""
+
+    constructor(shoeName: String,
+                    shoeSize: String,
+                        shoeCompany: String,
+                            shoeDescription: String){
+        this.shoeSize = shoeSize
+        this.companyName = shoeCompany
+        this.shoeDescription = shoeDescription
+        this.shoeName = shoeName
+    }
+
+
+}

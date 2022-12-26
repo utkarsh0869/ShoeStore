@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <data>
+
         <variable
             name="welcomeFragment"
             type="com.udacity.shoestore.WelcomeFragment" />
@@ -18,24 +20,24 @@
             android:id="@+id/firstTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to the Shoe Store Inventory App."
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="Welcome to the Shoe Store Inventory App." />
 
         <TextView
             android:id="@+id/secondTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Click on the Instructions button below."
             android:layout_below="@+id/firstTextView"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="Click on the Instructions button below." />
 
         <Button
+            android:id="@+id/goToInstructionButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/goToInstructionButton"
             android:layout_below="@+id/secondTextView"
-            android:text="Go To Instruction"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:text="Go To Instruction" />
 
 
     </LinearLayout>

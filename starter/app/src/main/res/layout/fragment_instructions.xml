@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout>
 
     <data>
+
         <variable
             name="instructionsFragment"
             type="com.udacity.shoestore.InstructionsFragment" />
     </data>
     <!-- Used LinearLayout because there are only 3 views that needs to be shown
-     and the easiest way to present them is by using LinearLayout by aligning the views vertically-->
+     and the easiest way to present them is by using LinearLayout by aligning the
+     views vertically-->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".InstructionsFragment"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".InstructionsFragment">
 
         <TextView
             android:id="@+id/firstInstructionTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="By clicking the Shoe List Button, you will be taken to the shoe list page."
             android:layout_margin="10dp"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="By clicking the Shoe List Button, you will be taken to the shoe list page."
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20dp"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/secondInstructionTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thereon after you can add your desired shoe to the inventory."
+            android:layout_below="@+id/firstInstructionTextView"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="Thereon after you can add your desired shoe to the inventory."
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20dp"
-            android:layout_below="@+id/firstInstructionTextView"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/shoeListButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shoe List"
             android:layout_below="@+id/secondInstructionTextView"
             android:layout_margin="10dp"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimaryDark"/>
+            android:background="@color/colorPrimaryDark"
+            android:text="Shoe List"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </layout>

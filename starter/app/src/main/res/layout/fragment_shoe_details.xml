@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
+    <data>
+
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.fragments.ShoeViewModel" />
+    </data>
+
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -17,26 +25,29 @@
                 android:id="@+id/shoeDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="SHOE DESCRIPTION" />
+                android:hint="SHOE DESCRIPTION"
+                android:text="@={shoeViewModel.shoeDescription}" />
 
             <EditText
                 android:id="@+id/shoeSize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="SHOE SIZE" />
+                android:hint="SHOE SIZE"
+                android:text="@={shoeViewModel.shoeSize}" />
 
             <EditText
                 android:id="@+id/shoeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="SHOE NAME"/>
+                android:hint="SHOE NAME"
+                android:text="@={shoeViewModel.shoeName}" />
 
             <EditText
                 android:id="@+id/shoeCompany"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="SHOE COMPANY"/>
-
+                android:hint="SHOE COMPANY"
+                android:text="@={shoeViewModel.shoeCompany}" />
 
 
             <Button

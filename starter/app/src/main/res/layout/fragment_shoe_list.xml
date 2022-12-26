@@ -23,16 +23,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/logoutButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="Logout"
-                    android:layout_gravity="center"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
             </LinearLayout>
 
         </ScrollView>
